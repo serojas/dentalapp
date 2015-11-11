@@ -1,0 +1,5 @@
+@CHARSET "ISO-8859-1";
+
+.tooth_div {
+	 background-image: url("paper.gif");
+}

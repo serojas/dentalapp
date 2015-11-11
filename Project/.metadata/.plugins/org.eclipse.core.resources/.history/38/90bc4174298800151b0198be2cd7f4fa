@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<meta charset="utf-8" http-equiv="encoding">
+<!-- it's important for d3.js -->
+<script src="../../scripts/lib/angular/angular.js"></script>
+<script src="../../scripts/lib/d3/d3.min.js" charset="utf-8"></script>
+<script src="../../scripts/lib/nvd3/build/nv.d3.js"></script>
+<!-- or use another assembly -->
+<script src="../../scripts/lib/angular-nvd3/dist/angular-nvd3.js"></script>
+<script src="controllers/dental-test-ctrl.js"></script>
+<link rel="stylesheet" href="../../scripts/lib/nvd3/build/nv.d3.css">
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="myCtrl">
+			<nvd3 options="options" data="data"></nvd3>
+		</div>
+	</div>
+</body>
+</html>

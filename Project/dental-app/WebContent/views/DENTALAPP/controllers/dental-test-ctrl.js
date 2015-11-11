@@ -4,12 +4,13 @@ angular.module('myApp', [ 'nvd3' ]).controller('myCtrl', function($scope) {
 	$scope.options = {
 		chart : {
 			type : 'discreteBarChart',
-			height : 450,
+			height : 130,
+			width : 100,
 			margin : {
-				top : 20,
-				right : 20,
-				bottom : 50,
-				left : 55
+				top : 50,
+				right : 0,
+				bottom : 0,
+				left : 60
 			},
 			x : function(d) {
 				return d.label;
@@ -19,7 +20,7 @@ angular.module('myApp', [ 'nvd3' ]).controller('myCtrl', function($scope) {
 			},
 			showValues : true,
 			valueFormat : function(d) {
-				return d3.format(',.4f')(d);
+				return d;
 			},
 			transitionDuration : 500,
 			xAxis : {
@@ -27,7 +28,7 @@ angular.module('myApp', [ 'nvd3' ]).controller('myCtrl', function($scope) {
 			},
 			yAxis : {
 				axisLabel : 'Y Axis',
-				axisLabelDistance : -10
+				axisLabelDistance : -5
 			}
 		}
 	};
@@ -39,28 +40,13 @@ angular.module('myApp', [ 'nvd3' ]).controller('myCtrl', function($scope) {
 		key : "Cumulative Return",
 		values : [ {
 			"label" : "A",
-			"value" : -29.765957771107
+			"value" : -15
 		}, {
 			"label" : "B",
-			"value" : 0
+			"value" : 5
 		}, {
 			"label" : "C",
-			"value" : 32.807804682612
-		}, {
-			"label" : "D",
-			"value" : 196.45946739256
-		}, {
-			"label" : "E",
-			"value" : 0.19434030906893
-		}, {
-			"label" : "F",
-			"value" : -98.079782601442
-		}, {
-			"label" : "G",
-			"value" : -13.925743130903
-		}, {
-			"label" : "H",
-			"value" : -5.1387322875705
+			"value" : 15
 		} ]
 	} ];
 

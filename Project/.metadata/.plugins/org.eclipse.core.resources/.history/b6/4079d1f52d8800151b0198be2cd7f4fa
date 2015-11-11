@@ -1,0 +1,53 @@
+angular.module('myApp', [ 'nvd3' ]).controller('myCtrl', function($scope) {
+
+	/* Chart options */
+	$scope.options = {
+		chart : {
+			type : 'discreteBarChart',
+			height : 100,
+			width : 100,
+			margin : {
+				top : 5,
+				right : 5,
+				bottom : 5,
+				left : 50
+			},
+			x : function(d) {
+				return d.label;
+			},
+			y : function(d) {
+				return d.value;
+			},
+			showValues : true,
+			valueFormat : function(d) {
+				return d;
+			},
+			transitionDuration : 500,
+			xAxis : {
+				axisLabel : 'X Axis'
+			},
+			yAxis : {
+				axisLabel : 'Y Axis',
+				axisLabelDistance : -5
+			}
+		}
+	};
+
+	/* Chart data */
+	// $scope.data = { /* JSON data */}
+	
+	$scope.data = [ {
+		key : "Cumulative Return",
+		values : [ {
+			"label" : "A",
+			"value" : -15
+		}, {
+			"label" : "B",
+			"value" : 5
+		}, {
+			"label" : "C",
+			"value" : 15
+		} ]
+	} ];
+
+})

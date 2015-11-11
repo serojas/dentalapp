@@ -1,0 +1,7 @@
+@CHARSET "ISO-8859-1";
+
+.tooth_div {
+	 background-image: url("../images/tooth.jpg");
+	 width: 250px;
+	 heigth: 170px;
+}

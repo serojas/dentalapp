@@ -1,0 +1,22 @@
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-11-10 21:49:35.335
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2015-11-10 21:49:56.477
+!MESSAGE Module dental-app on JBoss AS 7.1 not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-11-10 21:49:56.497
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2015-11-10 21:53:49.374
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-11-10 21:55:03.805
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-11-10 21:55:08.962
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2015-11-10 21:55:08.962
+!MESSAGE Module dental-app on JBoss AS 7.1 not yet fully deployed. Waiting...
