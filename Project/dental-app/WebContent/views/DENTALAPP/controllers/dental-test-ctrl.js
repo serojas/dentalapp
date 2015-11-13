@@ -1,5 +1,9 @@
-angular.module('myApp', [ 'nvd3' ]).controller('myCtrl', function($scope) {
+var app = angular.module('myApp', ['nvd3']);
+app.controller('myCtrl', function($scope) {
 
+	$scope.quantityA = 0;
+	$scope.quantityB = 0;
+	$scope.quantityC = 0;
 	/* Chart options */
 	$scope.options = {
 		chart : {
@@ -36,18 +40,23 @@ angular.module('myApp', [ 'nvd3' ]).controller('myCtrl', function($scope) {
 	/* Chart data */
 	// $scope.data = { /* JSON data */}
 	
-	$scope.data = [ {
+	$scope.dataChart = [ {
 		key : "Cumulative Return",
 		values : [ {
 			"label" : "A",
-			"value" : -15
+			"value" : $scope.quantityA
 		}, {
 			"label" : "B",
-			"value" : 5
+			"value" : $scope.quantityB
 		}, {
 			"label" : "C",
-			"value" : 15
+			"value" : $scope.quantityC
 		} ]
 	} ];
+	
+	$scope.onChangeQuantityA = function(){
+		var a=1;
+	};
+	
 
-})
+});
